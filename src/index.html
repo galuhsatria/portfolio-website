@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galuh Satria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bgcolor: "#0F172A",
+              primary: "#0EA5E9",
+              secondary: "#1E293B",
+            },
+            spacing: {
+              1: "1px",
+            },
+            screens: {
+              lg: "1000px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-bgcolor">
+    <nav class="bg-bgcolor text-white w-full sticky top-0 z-50">
+      <div class="flex justify-between lg:mx-20 mx-10 py-4">
+        <h1 class="font-semibold text-2xl">Galuh</h1>
+        <div id="overlay"></div>
+        <button class="lg:hidden" id="open">
+          <i class="bi bi-list text-2xl hover:text-primary"></i>
+        </button>
+        <div id="menu" class="menu lg:sticky fixed lg:bg-transparent bg-secondary lg:p-0 px-4 py-5">
+          <button class="lg:hidden text-3xl mr-0" id="close"><i class="bi bi-x hover:text-primary"></i></button>
+          <ul class="flex gap-7 lg:flex-row flex-col text-center lg:p-0 lg:mt-0 mt-20">
+            <li><a href="#home" class="menu-link hover:text-primary">Home</a></li>
+            <li><a href="#about" class="menu-link hover:text-primary">About</a></li>
+            <li><a href="#project" class="menu-link hover:text-primary">Project</a></li>
+            <li><a href="#certificate" class="menu-link hover:text-primary">Certificate</a></li>
+            <li><a href="" class="menu-link hover:text-primary">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="h-1 w-screen bg-secondary"></div>
+    </nav>
+    <!-- &#128075;&#127995; -->
+
+    <section id="home" data-aos="fade-up">
+      <div class="text-white min-h-screen lg:px-24 mx-auto px-14 flex items-center lg:justify-between justify-center lg:flex-row flex-col-reverse gap-10 lg:mx-20 lg:pt-0 pt-16">
+        <div class="flex gap-3 flex-col">
+          <h1 class="font-bold text-3xl lg:text-start text-center lg:h-5 h-20" id="element"></h1>
+          <p class="max-w-md lg:text-start text-center">A Passionate Front-End Developer. Based in Lombok, Indonesia</p>
+          <div class="social-media flex text-2xl gap-4 lg:justify-start justify-center">
+            <a href=""><i class="bi bi-github"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="">
+          <img src="/asset/profil.png" alt="" class="profil lg:w-96 w-80" />
+        </div>
+      </div>
+    </section>
+
+    <div class="tech-stack flex flex-col items-center gap-9 mx-10 pt-20 lg:pt-0">
+      <h1 class="font-bold text-2xl text-primary">Tech Stack</h1>
+      <ul class="logo flex gap-16 flex-wrap justify-center">
+        <li class="w-11"><img src="/asset/html.png" alt="html-logo" /></li>
+        <li class="w-11"><img src="/asset/css-3.png" alt="css-logo" /></li>
+        <li class="w-11"><img src="/asset/js.png" alt="js-logo" /></li>
+        <li class="w-11"><img src="/asset/reactjs.png" alt="reactjs-logo" /></li>
+        <li class="w-11"><img src="/asset/Tailwind_CSS_Logo.svg.png" alt="tailwind-logo" /></li>
+      </ul>
+    </div>
+
+    <section id="about">
+      <h1 class="text-primary font-bold text-3xl text-center pt-20">About</h1>
+      <div class="flex text-white justify-center pt-16 gap-20 items-center lg:flex-row flex-col mx-10" data-aos="fade-up">
+        <div>
+          <img src="/asset/about-img.png" alt="" class="w-96 profil" />
+        </div>
+        <div class="max-w-lg text-justify">
+          <p class="">
+           Hi My Name Is Galuh Satria, a front-end developer. You can call me Galuh. Recenlty, Im learning React. Now Im studying at a university in Lombok, Nusa Tengara Barat majoring in computer sience</p>
+           <p class="mt-3"> I like to explore some new tech stuf and editing video. btw i have a youtube channel  with video editing tutorial content, now i have more then 3K subscribers you can check it here <a href="https://youtube.com/galuhsatria" class="text-primary">Galuh Satria</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="pt-16">
+      <h1 class="text-3xl font-bold text-primary text-center mb-9 pt-6">Project Portfolio</h1>
+      <div class="flex flex-wrap gap-6 text-white mx-4 justify-center items-center">
+        <div class="bg-secondary p-4 rounded-md flex flex-col gap-5" data-aos="fade-up" data-aos-duration="1000">
+          <div class="thumniel w-60 h-32">
+            <a href="https://whatsapp-messages-helper.vercel.app/"><img src="/asset/wa-helper.png" alt="" class="rounded-md w-60 h-32  object-cover" /></a>
+          </div>
+          <p class="text-center text-primary">WhatsApp Message Helper</p>
+          <div class="tech-stack flex gap-5">
+            <img src="/asset/reactjs.png" alt="" class="w-10" />
+            <img src="/asset/Tailwind_CSS_Logo.svg.png" alt="" class="w-10" />
+          </div>
+          <div class="flex gap-5 ">
+            <a href="https://github.com/galuhsatria/whatsapp-messages-helper" class="hover:text-primary">Repository <i class="bi bi-github"></i></a>
+            <a href="https://whatsapp-messages-helper.vercel.app/" class="hover:text-primary">Live Demo <i class="bi bi-box-arrow-in-up-right"></i></a>
+          </div>
+        </div>
+        <div class="bg-secondary p-4  rounded-md flex flex-col gap-5" data-aos="fade-up" data-aos-duration="1500">
+          <div class="thumniel w-60 h-32">
+            <img src="/asset/alquran-app.png" alt="" class="object-cover h-32 w-60 rounded-md" />
+          </div>
+          <p class="text-center text-primary">Al-Quran App</p>
+          <div class="tech-stack flex gap-5">
+            <img src="/asset/reactjs.png" alt="" class="w-10" />
+            <img src="/asset/Tailwind_CSS_Logo.svg.png" alt="" class="w-10" />
+          </div>
+          <div class="flex gap-5">
+            <a href="https://github.com/galuhsatria/quran-app" class="hover:text-primary">Repository <i class="bi bi-github"></i></a>
+            <a href="https://galuhsatria-quran-app.vercel.app/" class="hover:text-primary">Live Demo <i class="bi bi-box-arrow-in-up-right"></i></a>
+          </div>
+        </div>
+    </section>
+
+    <section class="pt-20" id="certificate">
+      <h1 class="font-bold text-center text-primary text-3xl">Certificate</h1>
+      <div class="w-2/3 flex m-auto certificate">
+        <swiper-container class="mySwiper bg-secondary mt-10 lg:p-4 rounded-lg" navigation="true">
+          <swiper-slide class="flex justify-center items-center"><img src="/asset/belajar-dasar-pemrograman-web.png" alt="" class="w-96" /></swiper-slide>
+          <swiper-slide class="flex justify-center items-center"><img src="/asset/belajar-dasar-pemrograman-javascript.png" alt="" class="w-96" /></swiper-slide>
+          <swiper-slide class="flex justify-center items-center"><img src="/asset/belajar-membuat-frontend-pemula.png" alt="" class="w-96" /></swiper-slide>
+          <swiper-slide class="flex justify-center items-center"><img src="/asset/javascript-itermediate.png" alt="" class="w-96" /></swiper-slide>
+        </swiper-container>
+      </div>
+    </section>
+
+    <section id="contact" class="pt-20 pb-10">
+      <p class="text-primary text-center text-3xl font-bold mb-10">Get It Touch</p>
+      <div class="flex items-center justify-center gap-10 flex-wrap">
+        <div class="bg-secondary w-72 text-center text-white px-10 py-8 rounded-md flex flex-col gap-3">
+          <i class="bi bi-envelope text-4xl text-primary"></i>
+          <p class="font-bold text-xl">Mail</p>
+          <p class="text-lg text-primary">galuhsatria219@gmail.com</p>
+        </div>
+        <div class="bg-secondary w-72 text-center text-white px-10 py-8 rounded-md flex flex-col gap-3">
+          <i class="bi bi-geo-alt-fill text-4xl text-primary"></i>
+          <p class="font-bold text-xl">Location</p>
+          <p class="text-lg text-primary">Lombok, Indonesia</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-secondary">
+      <div class="lg:mx-10 lg:px-20 px:0 w-full py-10 gap-5 text-slate-600 flex justify-between lg:flex-row flex-col items-center">
+        <div class="social-media flex gap-4">
+          <a href=""><i class="bi bi-instagram text-xl hover:text-primary"></i></a>
+          <a href=""><i cimage.pnglass="bi bi-youtube text-xl hover:text-primary"></i></a>
+          <a href=""><i class="bi bi-twitter text-xl hover:text-primary"></i></a>
+          <a href=""><i class="bi bi-facebook text-xl hover:text-primary"></i></a>
+        </div>
+        <p class="text-base">Galuh Satria 2023 All Right Reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["<i>Hi Im</i> Galuh.", "Front-End Developer &#128075;&#127995;."],
+        typeSpeed: 50,
+        loop: true,
+        cursorChar: "",
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
