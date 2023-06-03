@@ -5,10 +5,7 @@ body {
   height: -webkit-fill-available;
   overflow-x: hidden;
   width: 100%;
-  right: 0;
-  /* height: 20000px; */
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -20,7 +17,6 @@ html {
   cursor: pointer;
   object-fit: contain;
   min-width: 15rem;
-  
 }
 .profil:hover {
   border-radius: 20px 60px 20px 60px;
@@ -32,7 +28,7 @@ html {
   min-width: 10rem;
 }
 
-.certificate{
+.certificate {
   min-width: 18rem;
 }
 @media only screen and (max-width: 1000px) {
