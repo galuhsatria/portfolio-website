@@ -39,7 +39,7 @@ const listProject = [
     tech: ["/asset/Tailwind_CSS_Logo.svg.png", "/asset/reactjs.png"],
   },
   {
-    thumbniel: "/asset/community-landing-page.png",
+    thumbniel: "/asset/blog-page.png",
     label: "Blog Page",
     repository: "https://github.com/galuhsatria/blog-page",
     live: "https://blog-page-galuhsatria.vercel.app/",
@@ -57,8 +57,8 @@ listProject.map(
     <img src="${data.thumbniel}" alt="" class="object-cover h-48 w-60 rounded-md" />
   </div>
   <p class="text-center text-primary">${data.label}</p>
-  <div class="tech-stack flex gap-5" id="tech-stack">
-    ${data.tech.map((tech) => `<img src="${tech}" alt="" class="w-12" />`).join("")}
+  <div class="tech-stack flex gap-5 w-10" id="tech-stack">
+    ${data.tech.map((tech) => `<img src="${tech}" alt="" class="object-contain" />`).join("")}
   </div>
   <div class="flex gap-5">
     <a href="${data.repository}" class="hover:text-primary">Repository <i class="bi bi-github"></i></a>
