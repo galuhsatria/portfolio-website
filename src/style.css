@@ -24,6 +24,22 @@ html {
   transform: rotate(10deg);
 }
 
+#profile{
+  animation:profile_animate 8s ease-in-out infinite 1s;
+}
+@keyframes profile_animate {
+0%{
+border-radius: 68% 40% 30% 70%/60% 30% 70% 40%;
+}
+
+50%{
+border-radius: 38% 60% 70% 48%/50% 60% 30% 60%;
+}
+
+100%{
+border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+}
 .thumniel img {
   min-width: 10rem;
 }
