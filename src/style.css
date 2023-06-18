@@ -26,6 +26,7 @@ html {
 
 #profile{
   animation:profile_animate 8s ease-in-out infinite 1s;
+  border:1px solid white;
 }
 @keyframes profile_animate {
 0%{
