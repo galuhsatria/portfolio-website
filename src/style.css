@@ -26,8 +26,9 @@ html {
 
 #profile{
   animation:profile_animate 8s ease-in-out infinite 1s;
-  border:1px solid white;
+  border:2px solid white;
 }
+
 @keyframes profile_animate {
 0%{
 border-radius: 68% 40% 30% 70%/60% 30% 70% 40%;
