@@ -35,7 +35,7 @@ const listProject = [
     thumbniel: "/asset/alquran-app.png",
     label: "Al-Quran App",
     repository: "https://github.com/galuhsatria/quran-app",
-    live: "https://github.com/galuhsatria/quran-app",
+    live: "https://galuhsatria-quran-app.vercel.app/",
     tech: ["/asset/Tailwind_CSS_Logo.svg.png", "/asset/reactjs.png"],
   },
   {
