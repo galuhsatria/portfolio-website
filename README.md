@@ -1,5 +1,5 @@
-# portfolio-website
+# Portfolio-website
 *informasi yang disajikan pada website*
-- About
+- Tentang
 - Sertifikat
 - Daftar project
